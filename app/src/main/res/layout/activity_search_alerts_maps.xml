@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundApp"
+    android:weightSum="8">
+
+<fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="7"
+    tools:context="org.ejfr.petsrescue.petsrescue.SearchAlertsMapsActivity" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/buttonBackSearchAlertsMaps"
+            android:backgroundTint="@color/colorButtonBackground"
+            android:layout_margin="1dp"
+            android:textColor="@color/colorTextButton"
+            android:text="@string/label_back_button_search_alerts_maps"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/buttonGoToSelectedAlert"
+            android:backgroundTint="@color/colorButtonBackground"
+            android:layout_margin="1dp"
+            android:textColor="@color/colorTextButton"
+            android:text="@string/label_go_to_selected_pet_alert"/>
+    </LinearLayout>
+</LinearLayout>

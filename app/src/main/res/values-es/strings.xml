@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PetsRescue</string>
+    <string name="add_alert">Nueva Alerta</string>
+    <string name="default_value">Valor por defecto</string>
+    <string name="error_checking_fields_in_pet_alert">Error comprobando los datos. Revísalos, por favor.</string>
+    <string name="error_storing_pet_alert">Hubo un error enviando la alerta. Inténtelo más tarde. Gracias.</string>
+    <string name="hello_blank_fragment">Hola mundo!!</string>
+    <string name="label_add_marker">Añadir Marcador</string>
+    <string name="label_back_button_search_alerts_maps">Atrás</string>
+    <string name="label_breed">Raza</string>
+    <string name="label_cancel_alert">Cancelar</string>
+    <string name="label_cancel_location">Atrás</string>
+    <string name="label_current_location">Ubicación actual</string>
+    <string name="label_date">Fecha</string>
+    <string name="label_error_signin">Error logueando usuario en base de datos.</string>
+    <string name="label_exit_app">Salir</string>
+    <string name="label_go_to_selected_pet_alert">Ir a la alerta seleccionada</string>
+    <string name="label_location">Ubicación</string>
+    <string name="label_maps_marker">Ubicación seleccionada</string>
+    <string name="label_observations">Observaciones</string>
+    <string name="label_select_existing_picture">Seleccionar Foto</string>
+    <string name="label_send_alert">Enviar Alerta</string>
+    <string name="label_size">Tamaño</string>
+    <string name="label_take_picture">Hacer Foto</string>
+    <string name="label_time">Hora</string>
+    <string name="label_type">Tipo</string>
+    <string name="label_type_alert_abandoned">Abandonado</string>
+    <string name="label_type_alert_matched">Mascota encontró dueño</string>
+    <string name="label_type_alert_missed">Perdido</string>
+    <string name="label_type_alert_picked_up">Recogido</string>
+    <string name="label_type_of_alert">Elige un tipo de alerta</string>
+    <string name="label_view_alert_back">Atrás</string>
+    <string name="label_view_alert_breed">Raza:</string>
+    <string name="label_view_alert_button_match">Mascota encontró dueño</string>
+    <string name="label_view_alert_date">Fecha</string>
+    <string name="label_view_alert_latitude">Latitud</string>
+    <string name="label_view_alert_location">Ubicación</string>
+    <string name="label_view_alert_longitude">Longitud</string>
+    <string name="label_view_alert_observations">Observaciones:</string>
+    <string name="label_view_alert_size_pet">Tamaño:</string>
+    <string name="label_view_alert_time">Hora:</string>
+    <string name="label_view_alert_type_alert">Tipo de Alerta:</string>
+    <string name="label_view_alert_type_pet">Tipo de Mascota:</string>
+    <string name="search_alerts">Buscar Alertas</string>
+    <string name="select_picture">Selecciona una imagen</string>
+    <string name="success_storing_pet_alert">Alerta guardada correctamente</string>
+    <string name="title_activity_maps">Pets Rescue</string>
+    <string name="title_activity_search_alerts_maps">Mapa de Alertas</string>
+    <string name="title_type_alert_abandoned">PetsRescue: Abandonado</string>
+    <string name="title_type_alert_missed">PetsRescue: Perdido</string>
+    <string name="title_type_alert_picked_up">PetsRescue: Recogido</string>
+    <string name="toast_message_new_alert">"Hay tres tipos de alertas:\n - Abandonado: Para mascotas vistas en la calle. \n - Perdido: Para mascostas que se han perdido, por tanto ya tienen dueño. \n - Recogido: Para mascotas que han sido recogidas de la calle y por tanto, no tienen dueño. \n\nIMPORTANTE: Usa los campos raza y observaciones para escribir los datos importantes que consideres oportuno.\nSi has perdido tu mascota y quieres que alguien contacte contigo incluye tus datos: teléfono o email en el campo observaciones.\n\nPor favor, no crees una Alerta si no estás totalmente seguro.\n\nSalvemos al mayor número de animales posibles!!"</string>
+    <string name="toast_message_type_alert_updated_error">Error actualizando alerta. Inténtelo más tarde. Gracias.</string>
+    <string name="toast_message_type_alert_updated_successfully">La mascota te encontró! Gracias!</string>
+    <string name="toast_message_type_alert_updated_title">Actualizar Estado de Alerta</string>
+    <string name="toast_title_new_alert">Cómo crear una nueva Alerta</string>
+    <string name="view_my_alerts">Ver mis Alertas</string>
+
+    <string-array name="string_array_type_animals">
+        <item>perro</item>
+        <item>gato</item>
+        <item>pájaro</item>
+        <item>cerdo</item>
+        <item>cabra</item>
+        <item>oveja</item>
+        <item>vaca</item>
+        <item>pollo</item>
+        <item>butto</item>
+        <item>pato</item>
+        <item>camello</item>
+        <item>caballo</item>
+        <item>paloma</item>
+        <item>otras</item>
+    </string-array>
+
+    <string-array name="string_array_size_animals">
+        <item>grande</item>
+        <item>medio</item>
+        <item>pequeño</item>
+    </string-array>
+
+</resources>

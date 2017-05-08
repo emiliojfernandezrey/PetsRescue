@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundApp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="org.ejfr.petsrescue.petsrescue.AlertActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="14">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="2dip">
+
+                <TextView
+                    android:id="@+id/textViewTypeOfAlert"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:layout_margin="1dp"
+                    android:text="@string/label_type_of_alert"
+                    android:textColor="@color/colorText" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupAlertType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_span="3"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonAlertAbandoned"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:text="@string/label_type_alert_abandoned" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonAlertMissed"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:text="@string/label_type_alert_missed" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonAlertPickedUp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:text="@string/label_type_alert_picked_up" />
+
+                    </RadioGroup>
+
+                </TableRow>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageViewPhoto"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/default_pet_image" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textViewLabelType"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorText"
+                            android:text="@string/label_type" />
+
+                        <Spinner
+                            android:id="@+id/spinnerType"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorText"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textViewLabelSize"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorText"
+                            android:text="@string/label_size" />
+
+                        <Spinner
+                            android:id="@+id/spinnerSize"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorText"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/buttonDate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorTextButton"
+                            android:backgroundTint="@color/colorButtonBackground"
+                            android:text="@string/label_date" />
+
+                        <TextView
+                            android:id="@+id/textViewDate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/buttonTime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorTextButton"
+                            android:backgroundTint="@color/colorButtonBackground"
+                            android:text="@string/label_time" />
+
+                        <TextView
+                            android:id="@+id/textViewTime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorText"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/buttonSelectPhoto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorButtonBackground"
+                    android:textColor="@color/colorTextButton"
+                    android:text="@string/label_select_existing_picture" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                android:weightSum="9">
+
+                <Button
+                    android:id="@+id/buttonLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:backgroundTint="@color/colorButtonBackground"
+                    android:textColor="@color/colorTextButton"
+                    android:text="@string/label_location" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorText"
+                    android:backgroundTint="@color/colorButtonBackground"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textViewBreed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorText"
+                    android:layout_margin="1dp"
+                    android:text="@string/label_breed" />
+
+                <EditText
+                    android:id="@+id/editTextBreed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:textColor="@color/colorText"
+                    android:layout_margin="1dp"
+                    android:maxLength="30" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/textViewObservations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorText"
+                    android:layout_margin="1dp"
+                    android:text="@string/label_observations" />
+
+                /Row 7
+
+                <EditText
+                    android:id="@+id/editTextObservations"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:textColor="@color/colorText"
+                    android:layout_margin="1dp"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/buttonCancelAlert"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorButtonBackground"
+                    android:textColor="@color/colorTextButton"
+                    android:layout_margin="1dp"
+                    android:text="@string/label_cancel_alert" />
+
+                <Button
+                    android:id="@+id/buttonSendAlert"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/colorButtonBackground"
+                    android:textColor="@color/colorTextButton"
+                    android:layout_margin="1dp"
+                    android:text="@string/label_send_alert" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

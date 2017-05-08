@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="myColorPrimary">#2d6810</color>
+    <color name="myColorPrimaryDark">#aaabaa</color>
+    <color name="myColorAccent">#2d6810</color>
+    <color name="colorAdapterSearchAlert">#dfd5d8</color>
+    <color name="colorPetAlertAbandoned">#ebec1405</color>
+    <color name="colorPetAlertMissed">#edda08</color>
+    <color name="colorPetAlertPickedUp">#0ebf05</color>
+    <color name="colorPetAlertDefault">#05c8ef</color>
+    <color name="colorBorder">#000000</color>
+    <color name="colorBackgroundApp">#d9d9d9</color>
+    <color name="colorFont">#000000</color>
+    <color name="colorButtonBackground">#2d6810</color>
+    <color name="colorButtonDisabledBackground">#ac5f5e</color>
+    <color name="colorTextButton">#f5f5f5</color>
+    <color name="colorText">#000000</color>
+    <color name="colorTextAdapterLayouts">#000000</color>
+
+</resources>

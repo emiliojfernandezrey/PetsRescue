@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">PetsRescue</string>
+    <string name="title_activity_maps">Pets Rescue</string>
+    <string name="add_alert">Add Pet Alert</string>
+    <string name="view_my_alerts">View My Alerts</string>
+    <string name="search_alerts">Search Alerts </string>
+    <string name="label_type">Type</string>
+    <string name="label_size">Size</string>
+    <string name="label_breed">Breed</string>
+    <string name="label_observations">Observations</string>
+    <string name="label_date">Date</string>
+    <string name="label_time">Time</string>
+    <string name="label_location">Location</string>
+    <string name="label_take_picture">Take Photo</string>
+    <string name="label_select_existing_picture">Select Photo</string>
+    <string name="select_picture">Please Select a picture</string>
+    <string name="label_send_alert">Send Alert</string>
+    <string name="default_value">Default Value</string>
+    <string name="label_cancel_alert">Cancel</string>
+    <string name="label_cancel_location">Back</string>
+    <string name="label_current_location">Current Location</string>
+    <string name="label_add_marker">Add Marker</string>
+    <string name="label_maps_marker">Location Selected</string>
+    <string name="label_exit_app">Exit</string>
+    <string name="label_error_signin">Error signing in database</string>
+    <string name="title_type_alert_abandoned">PetsRescue: Abandoned</string>
+    <string name="title_type_alert_missed">PetsRescue: Missed</string>
+    <string name="title_type_alert_picked_up">PetsRescue: Picked Up</string>
+    <string name="label_type_alert_abandoned">Abandoned</string>
+    <string name="label_type_alert_missed">Missed</string>
+    <string name="label_type_alert_picked_up">Picked Up</string>
+    <string name="label_type_alert_matched">Pet Matches Owner</string>
+    <string name="error_storing_pet_alert">There was an error sending Pets Alert. Please try it later.</string>
+    <string name="success_storing_pet_alert">Pet alert saved successfully</string>
+    <string name="label_type_of_alert">Please select Alert Pet Type</string>
+    <string name="label_back_button_search_alerts_maps">Back</string>
+    <string name="label_go_to_selected_pet_alert">Go to Select Pet Alert</string>
+    <string name="label_view_alert_type_alert">Type Alert:</string>
+    <string name="label_view_alert_type_pet">Pet Type:</string>
+    <string name="label_view_alert_size_pet">Pet Size:</string>
+    <string name="label_view_alert_date">Date:</string>
+    <string name="label_view_alert_time">Time:</string>
+    <string name="label_view_alert_latitude">Latitude:</string>
+    <string name="label_view_alert_longitude">Longitude:</string>
+    <string name="label_view_alert_location">Location</string>
+    <string name="label_view_alert_breed">Breed:</string>
+    <string name="label_view_alert_observations">Observations:</string>
+    <string name="label_view_alert_back">Back</string>
+    <string name="error_checking_fields_in_pet_alert">Error checking fields. Please review them.</string>
+    <string name="toast_message_new_alert">There are three types of alerts: \n - Abandoned: For homeless pets. \n - Missed: For owners who missed its pet.\n - Picked Up: For doghouse host. \n\nIMPORTANT: Use breed and observations fields to write the important data you consider.\nIf you miss your pet and want someone contact with you please include some telephone number or email in observations field.\n\nPlease dont create a Pet Alert if you are not sure about it.\n\nHelp Save Pets!
+    </string>
+    <string name="toast_title_new_alert">How to create new Alert</string>
+    <string name="label_view_alert_button_match">Pet Matches Owner</string>
+    <string name="toast_message_type_alert_updated_successfully">Pet matches found you! Thank you\"</string>
+    <string name="toast_message_type_alert_updated_error">Error updating the alert. \n Please try it later.</string>
+    <string name="toast_message_type_alert_updated_title">Update Alert State</string>
+
+
+    <string-array name="string_array_type_animals">
+        <item>dog</item>
+        <item>cat</item>
+        <item>bird</item>
+        <item>pig</item>
+        <item>goat</item>
+        <item>sheep</item>
+        <item>cow</item>
+        <item>chicken</item>
+        <item>donkey</item>
+        <item>duck</item>
+        <item>camel</item>
+        <item>horse</item>
+        <item>pigeon</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="string_array_size_animals">
+        <item>big</item>
+        <item>medium</item>
+        <item>small</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search_alerts_maps">Alerts Map</string>
+</resources>

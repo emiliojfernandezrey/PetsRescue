@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundApp"
+    android:weightSum="8">
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        tools:context="org.ejfr.petsrescue.petsrescue.MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="fill_horizontal"
+        android:weightSum="3"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/buttonCancelLocation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="fill_horizontal"
+            android:textColor="@color/colorTextButton"
+            android:backgroundTint="@color/colorButtonBackground"
+            android:text="@string/label_cancel_location" />
+        <Button
+            android:id="@+id/buttonSelectCurrentLocation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="fill_horizontal"
+            android:backgroundTint="@color/colorButtonBackground"
+            android:textColor="@color/colorTextButton"
+            android:text="@string/label_current_location" />
+    </LinearLayout>
+</LinearLayout>
